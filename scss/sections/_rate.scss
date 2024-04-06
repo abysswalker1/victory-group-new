@@ -1,0 +1,29 @@
+.rate {
+   background-image: url(/images/hero-bg.png);
+   h2 {
+    color: #fff;
+    margin-bottom: 20px;
+   } 
+   .submit {
+    margin-top: 40px;
+   }
+   &-image {
+    margin-top: 14px;
+    max-width: 50%;
+   }
+   &-form {
+    max-width: 460px;
+   }
+
+   @include md {
+    &-image {
+        display: none;
+    }
+   }
+
+   @include sm {
+    &-form {
+        width: 100%;
+    }
+   }
+}

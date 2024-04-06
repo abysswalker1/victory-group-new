@@ -1,0 +1,61 @@
+.work {
+    color: #fff;
+    background-color: var(--bg);
+    ul {
+        display: grid;
+        grid-template-columns: auto auto;
+        justify-content: space-between;
+        row-gap: 30px;
+        column-gap: 10px;
+        li {
+            font-size: 22px;
+            line-height: 29px;
+            display: flex;
+            align-items: flex-start;
+            img {
+                width: 60px;
+                margin-right: 40px;
+                display: inline;
+                height: 29px;
+            }
+        }
+    }
+
+    @include lg {
+        ul {
+            li {
+                font-size: 16px;
+                img {
+                    width: 28px;
+                    margin-right: 20px;
+                }
+            }
+        }
+    }
+
+    @include md {
+        ul {
+            grid-template-columns: 100%;
+            row-gap: 8px;
+            li {
+                font-size: 12px;
+                line-height: 100%;
+                img {
+                    height: 16px;
+                }
+            }
+        }
+    }
+
+    @include sm {
+        ul {
+            li {
+                line-height: normal;
+                img {
+                    width: 20px;
+                    margin-right: 8px;
+                }
+            }
+        }
+    }
+}

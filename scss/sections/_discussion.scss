@@ -1,0 +1,123 @@
+.discussion {
+    background: var(--bg);
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 20px;
+        justify-content: space-between;
+    }
+    h2 {
+        color: #fff;
+        max-width: 500px;
+    }
+    &-rules {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 195px 195px 92px;
+        grid-column: 2 / 3;
+        grid-row: 1 / 3;
+        row-gap: 20px;
+        column-gap: 40px;
+        &__item {
+            padding: 20px 30px;
+            background-color: #fff;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-between;
+            p {
+                display: block;
+                text-align: center;
+                font-weight: 500;
+            }
+            &-count {
+                font-size: 22px;
+            }
+            &-price {
+                p:first-child {
+                    font-size: 32px;
+                }
+                p:last-child {
+                    font-size: 16px;
+                    font-weight: 400;
+                }
+            }
+            &.wide {
+                padding: 20px 24px;
+                grid-column: 1 / 3;
+                flex-direction: row;
+                p {
+                    text-align: start;
+                }
+                .discussion-rules__item-price {
+                    align-self: flex-end;
+                    font-size: 16px;    
+                }
+            }
+        }
+    }
+    &-form {
+        color: #fff;
+        max-width: 500px;
+        margin-top: auto;
+        &__title {
+            font-size: 28px;
+            font-weight: 600;
+            text-transform: uppercase;
+            margin-bottom: 26px;
+        }
+    }
+
+    @include lg {
+        h2 {
+            margin-bottom: 0;
+        }
+        .container {
+            grid-template-columns: 100%;
+            row-gap: 30px;
+        }
+        &-rules {
+            grid-column: 1 / 2;
+            grid-row: 2 / 3;
+        }
+        &-form {
+            &__title {
+                font-size: 24px;
+            }
+        }
+    }
+
+    @include sm {
+        &-rules {
+            gap: 10px;
+            grid-template-rows: 140px 140px 80px;
+            &__item {
+                padding: 10px;
+                &-count {
+                    font-size: 16px;
+                }
+                &-price {
+                    p {
+                        &:first-child {
+                            font-size: 25px;
+                        }
+                    }
+                }
+
+                &.wide {
+                    padding: 10px;
+                    .discussion-rules__item-price {
+                        p:last-child {
+                            font-size: 12px;
+                        }
+                    }
+                }
+            }
+        }
+        &-form {
+            &__title {
+                margin-bottom: 10px;
+            }
+        }
+    }
+}

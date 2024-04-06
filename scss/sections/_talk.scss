@@ -1,0 +1,115 @@
+.talk {
+    &-examples {
+        margin-bottom: 36px;
+        gap: 40px;
+        &__item {
+            height: 308px;
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            background-size: cover;
+            background: no-repeat center center;
+            h3 {
+                color: #fff;
+            }
+            flex: 1;
+            &-buttons {
+                display: flex;
+                flex-direction: column;
+                gap: 7px;
+            }
+            .btn {
+                gap: 12px;
+                padding: 0;
+                height: 43px;
+                width: 100%;
+                font-size: 16px; 
+                border: 2px solid var(--primary);
+                .talk-examples-icon__playing {
+                    display: none;
+                }
+                &.playing {
+                    background: none;
+                    border-color: #fff;
+                    .talk-examples-icon {
+                        display: none;
+                    }
+                    .talk-examples-icon__playing {
+                        display: block;
+                    }
+                }
+            }
+        }
+        &-icon {
+            &__playing {
+                path {
+                    stroke: #fff;
+                }
+            }
+        }
+    }
+
+    @include lg {
+        &-examples {
+            gap: 20px;
+            &__item {
+                padding: 15px;
+                height: 230px;
+                &-buttons {
+                    flex-direction: row;
+                }
+                .btn {
+                    width: auto;
+                    flex: 1;
+                }
+            }
+        }
+    }
+
+    @include md {
+        &-examples {
+            gap: 10px;
+            flex-wrap: wrap;
+            &__item {
+                flex: unset;
+                width: calc(50% - 10px);
+                height: 180px;
+            }
+        }
+    }
+
+    @include sm {
+        &-examples {
+            &__item {
+                flex-direction: row;
+                align-items: center;
+                background-image: none !important;
+                width: 100%;
+                height: auto;
+                border-bottom: 1px solid #000;
+                padding: 10px 5px;
+                h3 {
+                    color: inherit;
+                }
+                .btn {
+                    width: 30px;
+                    height: 30px;
+                    &.playing {
+                        border-color: #000;
+                    }
+                }
+            }
+            &-icon {
+                &__playing {
+                    path {
+                        stroke: #000;
+                    }
+                }
+            }
+        }
+        .audio-example-text {
+            display: none;
+        }
+    }
+}

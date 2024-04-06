@@ -1,0 +1,71 @@
+.header {
+    padding: 12px 0 20px;
+    border-bottom: 1px solid var(--border);
+    margin-bottom: 68px;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &-logo {
+        font-size: 22px;
+        font-weight: 600;
+        font-family: 'Kanit', sans-serif;
+        text-transform: uppercase;
+
+        &__icon {
+           margin-right: 24px; 
+           width: 42px;
+           height: 42px;
+        }
+    }
+
+    &-call {
+        font-weight: 700;
+        column-gap: 10px;
+    }
+
+    nav a {
+        margin-right: 28px;
+
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    @include lg {
+        padding: 15px 0;
+        border-bottom: none;
+        margin-bottom: 30px;
+        &-logo {
+            font-size: 15px;
+            &__icon {
+                width: 30px;
+                height: 30px;
+                margin-right: 15px;
+            }
+        }
+        nav a {
+            margin-right: 10px;  
+            font-size: 14px;
+        }
+        &-call {
+            font-size: 14px;
+        }
+    }
+
+    @include md {
+        &-call {
+            span {
+                display: none;
+            }
+        }
+    }
+
+    @include sm {
+        nav {
+            display: none;
+        }
+    }
+}

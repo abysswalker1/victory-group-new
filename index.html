@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700&display=swap?family=Kanit:ital,wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./scss/index.css" />
+    <title>Document</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="hero">
+            <header class="header">
+                <div class="container">
+                    <a href="#" class="header-logo center">
+                        <img class="header-logo__icon" src="/images/header-logo.svg" alt="">
+                        start call
+                    </a>
+                    <nav>
+                        <a href="#scripts">Сценарии</a>
+                        <a href="#talk">Примеры разговоров</a>
+                        <a href="#discussion">Тарифы</a>
+                        <a href="#respect">Почему мы</a>
+                    </nav>
+                    <div class="header-call center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.2652 15.5 20.5196 15.6054 20.7071 15.7929C20.8946 15.9804 21 16.2348 21 16.5V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C15.4913 21 11.1673 19.2089 7.97918 16.0208C4.79107 12.8327 3 8.50868 3 4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H7.5C7.76522 3 8.01957 3.10536 8.20711 3.29289C8.39464 3.48043 8.5 3.73478 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="white"/>
+                        </svg>
+                        <span>+7 909 011-36-36</span>
+                    </div>
+                </div>
+            </header>
+            <div class="container hero-content">
+                <h2>Быстрая реализация: бесплатный запуск за 24 часа</h2>
+                <img class="hero-image" src="/images/hero-image.png" alt="">
+                <div class="hero-info">
+                    <p>Call-центр на аутсорсинге – это эффективный помощник для вашего бизнеса. Обзвон клиентов, информирование и напоминание, приём заявок происходит автономно, неразбериха в обслуживании заказов закончится.</p>
+                    <button class="hero-info__button submit center" data-modal-id="price-modal" type="button">Рассчитать стоимость</button>
+                </div>
+            </div>
+        </div>
+        <section class="scripts" id="scripts">
+            <div class="container">
+                <h2>Работаем по разным сценариями</h2>
+                <div class="section-grid">
+                    <img class="scripts-image" src="./images/scripts-image.png" alt="">
+                    <div class="scripts-right">
+                        <div class="scripts-tabs expanding-tabs-list">
+                            <div class="scripts-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <span class="expanding-tab__head-marker">I.</span>
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Информирование</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <ul>
+                                        <li>об акции;</li>
+                                        <li>о задолженности;</li>
+                                        <li>о каких-либо изменениях в компании.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scripts-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <span class="expanding-tab__head-marker">II.</span>
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Анкетирование</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <ul>
+                                        <li>оценка качества работы (проделанной работы/услуги);</li>
+                                        <li>социальный опрос;</li>
+                                        <li>выявление заинтересованности.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="scripts-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <span class="expanding-tab__head-marker">III.</span>
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Актуализация заявки</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <ul>
+                                        <li>подтверждение записи;</li>
+                                        <li>возврат клиента;</li>
+                                        <li>выявление заинтересованности.</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                        <button class="scripts-button btn" data-modal-id="scripts-modal" type="button">Составить индивидуальный скрипт</button>
+                    </div>
+                </div>
+            
+            </div>
+        </section>
+        <section class="talk" id="talk">
+            <div class="container">
+                <h2>примеры разговоров из разных сфер</h2>
+                <div class="talk-examples center">
+                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-1.png)">
+                        <h3>Автосалон</h3>
+                        <div class="talk-examples__item-buttons">
+                            <button data-audio="/audio/example.mp3"  class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-2.png)">
+                        <h3>Кредитование</h3>
+                        <div class="talk-examples__item-buttons">
+                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-3.png)">
+                        <h3>Салон красоты</h3>
+                        <div class="talk-examples__item-buttons">
+                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-4.png)">
+                        <h3>Недвижимость</h3>
+                        <div class="talk-examples__item-buttons">
+                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                <div class="center">
+                    <button class="btn" data-modal-id="talk-modal" type="button">Запросить завонки в вашей сфере</button>
+                </div>
+            </div>
+        </section>
+        <section class="discussion" id="discussion">
+            <div class="container">
+                <h2>формат и стоимость работ</h2>
+                <div class="discussion-rules">
+                    <div class="discussion-rules__item">
+                        <div class="discussion-rules__item-count">
+                            <p class="primary">до 5 000 </p>
+                            <p>номеров</p>
+                        </div>
+                        <div class="discussion-rules__item-price">
+                            <p class="primary">35 ₽</p>
+                            <p>/один номер</p>
+                        </div>
+                    </div>
+                    <div class="discussion-rules__item">
+                        <div class="discussion-rules__item-count">
+                            <p class="primary">5 000 — 10 000</p>
+                            <p>номеров</p>
+                        </div>
+                        <div class="discussion-rules__item-price">
+                            <p class="primary">30 ₽</p>
+                            <p>/один номер</p>
+                        </div>
+                    </div>
+                    <div class="discussion-rules__item">
+                        <div class="discussion-rules__item-count">
+                            <p class="primary">10 000 — 15 000 </p>
+                            <p>номеров</p>
+                        </div>
+                        <div class="discussion-rules__item-price">
+                            <p class="primary">25 ₽</p>
+                            <p>/один номер</p>
+                        </div>
+                    </div>
+                    <div class="discussion-rules__item">
+                        <div class="discussion-rules__item-count">
+                            <p class="primary">15 000 — 30 000</p>
+                            <p>номеров</p>
+                        </div>
+                        <div class="discussion-rules__item-price">
+                            <p class="primary">20 ₽</p>
+                            <p>/один номер</p>
+                        </div>
+                    </div>
+                    <div class="discussion-rules__item wide">
+                        <div class="discussion-rules__item-count">
+                            <p class="primary">Более 30 000</p>
+                            <p>номеров</p>
+                        </div>
+                        <div class="discussion-rules__item-price">
+                            <p class="primary">обсуждается лично</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="discussion-form">
+                    <p class="discussion-form__title">Обсудим детали <br>вашего проекта</p>
+                    <form>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-wrap">
+                            <img src="/images/russia.png" alt="">
+                            <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                        </div>
+                        <button class="submit center" type="submit">Отправить заявку</button>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="work">
+            <div class="container">
+                <h2>что входит в нашу работу</h2>
+                <ul>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Работа в CRM заказчика, контроль качества</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Оплата телефонии</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Формирование отчета с рекомендациями</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Подготовки и ведения проекта</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Предоставление записей разговоров</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Администрирование проекта </p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Обучение операторов продукту заказчика</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Первичная подготовка сценария</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Подготовки проекта до 1 рабочего дня</p>
+                    </li>
+                    <li>
+                        <img src="/images/list-arrow.svg" alt="">
+                        <p>Внесение корректировок в скрипт</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="stages">
+            <div class="container">
+                <h2>этапы работы</h2>
+                <div class="section-grid">
+                    <div class="stages-tabs expanding-tabs-list">
+                        <div class="stages-tabs__item expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>I. Этап <span class="expanding-tab__head-subtitle">Подготовка проекта</span></h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p>На основе портрета вашего клиента, создаем и согласовываем сценарий разговора между оператором и клиентом, после настраиваем интеграции с вашей CRM, гугл таблицей или почтой.</p>
+                            </div>
+                        </div>
+                        <div class="stages-tabs__item expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>II. Этап <span class="expanding-tab__head-subtitle">Работа операторов</span></h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p>Прозвоним любой объем базы за 2-3 дня, по вашим критериям отсеим холодных клиентов и передадим  только максимально заинтересованных в режиме онлайн</p>
+                            </div>
+                        </div>
+                        <div class="stages-tabs__item expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>III. Этап <span class="expanding-tab__head-subtitle">Сопровождение проекта</span></h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p>Предлагаем техническое сопровождение, контроль качества и запись всех телефонных разговоров. Отчеты предоставляются по запросу. Также есть возможность прослушать записи диалогов.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <img class="stages-image" src="/images/stages-image.png" alt="">
+                </div>
+            </div>
+        </section>
+        <section class="respect" id="respect">
+            <div class="container">
+                <h2>почему нам дверют</h2>
+                <ul>
+                    <li>
+                        <div class="respect-marker center circle">I</div>
+                        <h3>Бесплатная оценка</h3>
+                        <p>Мы предлагаем бесплатную оценку вашего проекта с учетом нашего многолетнего опыта.</p>
+                    </li>
+                    <li>
+                        <div class="respect-marker center circle">II</div>
+                        <h3>Услуги Call-центра</h3>
+                        <p>Мы предлагаем услуги колл-центра. Наши услуги включают проведение звонков, а также анализ и предоставление отчетов о результатах.</p>
+                    </li>
+                    <li>
+                        <div class="respect-marker center circle">III</div>
+                        <h3>Кратчайшие сроки</h3>
+                        <p>Мы гарантируем, что запустим ваш проект бесплатно в кратчайшие сроки - за 1-2 дня.</p>
+                    </li>
+                    <li>
+                        <div class="respect-marker center circle">IV</div>
+                        <h3>Система отчетности</h3>
+                        <p>Мы предоставляем прозрачную систему отчетности. Каждый звонок можно прослушать, и все результаты передаются для дальнейшего анализа.</p>
+                    </li>
+                    <li>
+                        <div class="respect-marker center circle">V</div>
+                        <h3>Масштабирование</h3>
+                        <p>Мы готовы обсудить с вами дальнейшие шаги по расширению и улучшению эффективности звонков.</p>
+                    </li>
+                    <li>
+                        <div class="respect-marker center circle">VI</div>
+                        <h3>Менеджер</h3>
+                        <p>Ваш персональный менеджер будет оперативно информировать вас о ходе выполнения звонков и отвечать на все возникающие вопросы.</p>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <section class="questions">
+            <div class="container">
+                <h2>Вопрос-ответ</h2>
+                <div class="section-grid">
+                    <img class="questions-image" src="/images/questions-image.png" alt="">
+                    <div class="questions-tabs expanding-tabs-list">
+                        <div class="expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>Какое качество заявок я получу?</h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p class="questions-tabs__text">Перед тем, как начать прозвон мы обсудим это с вами: договоримся о качестве лида, который вас устроит. Обычно это ЛПР с именем (мы его знаем), готовый обсудить ваше предложение детально по телефону с вашим экспертом или на встрече.</p>
+                            </div>
+                        </div>
+                        <div class="expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>Как попробовать?</h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p class="questions-tabs__text">Оставьте заявку в форме ниже и мы свяжемся с вами, чтобы рассказать, с чего мы можем начать и предложить вам тестовый период</p>
+                            </div>
+                        </div>
+                        <div class="expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>С какими проектами вы работаете?</h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p>Мы будем вам полезны, если:</p>
+                                <ul class="questions-tabs__text">
+                                    <li>вам нужно работать с большим объемом звонков — от 400 вызовов в день;</li>
+                                    <li>нужно отвечать на однотипные вопросы;</li>
+                                    <li>клиентам требуется поддержка;</li>
+                                    <li>продаете по телефону</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="expanding-tab">
+                            <div class="expanding-tab__head">
+                                <div class="expanding-tab__head-title">
+                                    <h3>Как выглядит отчетность?</h3>
+                                </div>
+                                <div class="expanding-tab__head-icon circle">
+                                    <img src="./images/crescent.svg" alt="">
+                                </div>
+                            </div>
+                            <div class="expanding-tab__content">
+                                <p class="questions-tabs__text">Мы составляем для вас отчеты с необходимой периодичностью в котором будут отражены количество и тематика обращений, данные клиента, результат диалога и другая необходимая информация по итогам анкетирования, которая в будущем поможет вам скорректировать ход рекламной кампании и направление развития.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="rate">
+            <div class="container section-grid">
+                <div class="rate-form">
+                    <h2>Подберем для вас оптимальный тариф</h2>
+                    <form>
+                        <div class="input-wrap">
+                            <input type="text" placeholder="Ваше имя">
+                        </div>
+                        <div class="input-wrap">
+                            <img src="/images/russia.png" alt="">
+                            <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                        </div>
+                        <button class="submit center" type="submit">Заказать услугу</button>
+                    </form>
+                </div>
+                <img class="rate-image" src="/images/rate-image.png" alt="">
+            </div>
+        </section>
+        <footer class="footer">
+            <div class="container section-grid">
+                <div class="footer-main">
+                    <div class="footer-logo">
+                        <img class="footer-logo__icon" src="/images/footer-logo.svg" alt="">
+                        start call
+                    </div>
+                    <div class="footer-contact">
+                        <span class="footer-contact__title">Почта:</span>
+                        <a class="footer-contact__link" href="mailto:info@thecoldsales.ru">info@thecoldsales.ru</a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-links__column">
+                        <div class="footer-contact">
+                            <span class="footer-contact__title">Телефон</span>
+                            <a class="footer-contact__link" href="tel:+79238884970"> +7 (923) 888-49-70</a>
+                        </div>
+                        <div class="footer-contact">
+                            <span class="footer-contact__title">Режим работы</span>
+                            <a class="footer-contact__link" href="mailto:info@thecoldsales.ru"> ПН – ПТ / 10:00 – 19:00 мск</a>
+                        </div>
+                    </div>
+                    <nav>
+                        <a href="#scripts">Сценарии</a>
+                        <a href="#talk">Примеры разговоров</a>
+                        <a href="#discussion">Тарифы</a>
+                        <a href="#respect">Почему мы</a>
+                    </nav>
+                </div>
+            </div>
+        </footer>
+        <div class="wrap-modals-all">
+            <div class="modal-wrap" id="price-modal">
+                <div class="modal">
+                    <img class="modal-image" src="/images/modal-image.png" alt="">
+                    <div class="modal-content">
+                        <p class="modal-content__title">
+                            Мы снизим стоимость услуг на 10%
+                            <span class="modal-content__text">Если вы оставите заявку на нашем сайте прямо сейчас!</span>
+                        </p>
+                        <form class="modal-content__form bright-form">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="/images/russia.png" alt="">
+                                <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                            </div>
+                            <button class="btn center" type="submit">Отправить заявку</button>
+                        </form>
+                    </div>
+                    <button class="modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                            <path d="M19.6002 21.4997L8.45511 10.3574C8.33017 10.2324 8.23107 10.0841 8.16345 9.92087C8.09584 9.75764 8.06104 9.58268 8.06104 9.40599C8.06104 9.22931 8.09584 9.05435 8.16345 8.89111C8.23107 8.72788 8.33017 8.57956 8.45511 8.45462C8.58004 8.32968 8.72836 8.23058 8.8916 8.16296C9.05484 8.09535 9.2298 8.06055 9.40648 8.06055C9.58317 8.06055 9.75813 8.09535 9.92136 8.16296C10.0846 8.23058 10.2329 8.32968 10.3579 8.45462L21.5002 19.5997L32.6426 8.45462C32.8949 8.2023 33.2371 8.06055 33.594 8.06055C33.9508 8.06055 34.293 8.2023 34.5454 8.45462C34.7977 8.70694 34.9394 9.04916 34.9394 9.40599C34.9394 9.76283 34.7977 10.105 34.5454 10.3574L23.4003 21.4997L34.5454 32.6421C34.7977 32.8944 34.9394 33.2367 34.9394 33.5935C34.9394 33.9503 34.7977 34.2925 34.5454 34.5449C34.293 34.7972 33.9508 34.9389 33.594 34.9389C33.2371 34.9389 32.8949 34.7972 32.6426 34.5449L21.5002 23.3998L10.3579 34.5449C10.1055 34.7972 9.76332 34.9389 9.40648 34.9389C9.04965 34.9389 8.70743 34.7972 8.45511 34.5449C8.20279 34.2925 8.06104 33.9503 8.06104 33.5935C8.06104 33.2367 8.20279 32.8944 8.45511 32.6421L19.6002 21.4997Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-wrap" id="scripts-modal">
+                <div class="modal">
+                    <img class="modal-image" src="/images/modal-image.png" alt="">
+                    <div class="modal-content">
+                        <p class="modal-content__title">Составим индивидуальный скрипт для ВАс</p>
+                        <form class="modal-content__form bright-form">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="/images/russia.png" alt="">
+                                <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                            </div>
+                            <button class="btn center" type="submit">Отправить заявку</button>
+                        </form>
+                    </div>
+                    <button class="modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                            <path d="M19.6002 21.4997L8.45511 10.3574C8.33017 10.2324 8.23107 10.0841 8.16345 9.92087C8.09584 9.75764 8.06104 9.58268 8.06104 9.40599C8.06104 9.22931 8.09584 9.05435 8.16345 8.89111C8.23107 8.72788 8.33017 8.57956 8.45511 8.45462C8.58004 8.32968 8.72836 8.23058 8.8916 8.16296C9.05484 8.09535 9.2298 8.06055 9.40648 8.06055C9.58317 8.06055 9.75813 8.09535 9.92136 8.16296C10.0846 8.23058 10.2329 8.32968 10.3579 8.45462L21.5002 19.5997L32.6426 8.45462C32.8949 8.2023 33.2371 8.06055 33.594 8.06055C33.9508 8.06055 34.293 8.2023 34.5454 8.45462C34.7977 8.70694 34.9394 9.04916 34.9394 9.40599C34.9394 9.76283 34.7977 10.105 34.5454 10.3574L23.4003 21.4997L34.5454 32.6421C34.7977 32.8944 34.9394 33.2367 34.9394 33.5935C34.9394 33.9503 34.7977 34.2925 34.5454 34.5449C34.293 34.7972 33.9508 34.9389 33.594 34.9389C33.2371 34.9389 32.8949 34.7972 32.6426 34.5449L21.5002 23.3998L10.3579 34.5449C10.1055 34.7972 9.76332 34.9389 9.40648 34.9389C9.04965 34.9389 8.70743 34.7972 8.45511 34.5449C8.20279 34.2925 8.06104 33.9503 8.06104 33.5935C8.06104 33.2367 8.20279 32.8944 8.45511 32.6421L19.6002 21.4997Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+            <div class="modal-wrap" id="talk-modal">
+                <div class="modal">
+                    <img class="modal-image" src="/images/modal-image.png" alt="">
+                    <div class="modal-content">
+                        <p class="modal-content__title">Получите звонки в вашей сфере</p>
+                        <form class="modal-content__form bright-form">
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="/images/russia.png" alt="">
+                                <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                            </div>
+                            <button class="btn center" type="submit">Отправить заявку</button>
+                        </form>
+                    </div>
+                    <button class="modal-close">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="43" height="43" viewBox="0 0 43 43" fill="none">
+                            <path d="M19.6002 21.4997L8.45511 10.3574C8.33017 10.2324 8.23107 10.0841 8.16345 9.92087C8.09584 9.75764 8.06104 9.58268 8.06104 9.40599C8.06104 9.22931 8.09584 9.05435 8.16345 8.89111C8.23107 8.72788 8.33017 8.57956 8.45511 8.45462C8.58004 8.32968 8.72836 8.23058 8.8916 8.16296C9.05484 8.09535 9.2298 8.06055 9.40648 8.06055C9.58317 8.06055 9.75813 8.09535 9.92136 8.16296C10.0846 8.23058 10.2329 8.32968 10.3579 8.45462L21.5002 19.5997L32.6426 8.45462C32.8949 8.2023 33.2371 8.06055 33.594 8.06055C33.9508 8.06055 34.293 8.2023 34.5454 8.45462C34.7977 8.70694 34.9394 9.04916 34.9394 9.40599C34.9394 9.76283 34.7977 10.105 34.5454 10.3574L23.4003 21.4997L34.5454 32.6421C34.7977 32.8944 34.9394 33.2367 34.9394 33.5935C34.9394 33.9503 34.7977 34.2925 34.5454 34.5449C34.293 34.7972 33.9508 34.9389 33.594 34.9389C33.2371 34.9389 32.8949 34.7972 32.6426 34.5449L21.5002 23.3998L10.3579 34.5449C10.1055 34.7972 9.76332 34.9389 9.40648 34.9389C9.04965 34.9389 8.70743 34.7972 8.45511 34.5449C8.20279 34.2925 8.06104 33.9503 8.06104 33.5935C8.06104 33.2367 8.20279 32.8944 8.45511 32.6421L19.6002 21.4997Z" fill="white"/>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

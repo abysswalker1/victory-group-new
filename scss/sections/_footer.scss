@@ -1,0 +1,120 @@
+.footer {
+    padding: 60px 0 55px;
+    &-logo {
+        gap: 24px;
+        font-size: 22px;
+        color: var(--primary);
+        font-weight: 600;
+        text-transform: uppercase;
+        margin-bottom: 25px;
+        display: flex;
+        align-items: center;
+        &__icon {
+           width: 41px;
+           height: 41px; 
+        }
+    }
+
+    &-contact {
+        font-size: 18px;
+        &__title {
+            font-weight: 700;
+        }
+        &__link {
+            font-weight: 500;
+            display: inline-block;
+            margin-left: 3px;
+        }
+    }
+
+    &-links {
+        width: 100%;
+        max-width: 600px;
+        display: flex;
+        justify-content: space-between;
+        &__column {
+            .footer-contact {
+                margin-bottom: 33px;
+                &:last-child {
+                    margin-bottom: 0;
+                }
+                &__title {
+                    display: block;
+                    margin-bottom: 16px;
+                }
+                &__link {
+                    margin-left: 0;
+                }
+            }
+        }
+
+        nav {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 25px;
+        }
+    }
+
+    @include lg {
+        &-links {
+            max-width: 400px;
+            nav {
+                gap: 20px;
+            }
+        }
+        &-contact {
+            font-size: 16px;
+        }
+    }
+
+    @include md {
+        padding: 40px 0;
+        &-main {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &-logo {
+            margin-bottom: 0;
+        }
+        &-links {
+            max-width: 100%;
+        }
+    }
+
+    @include sm {
+        padding: 20px 0;
+        &-main {
+            flex-direction: column;
+            align-items: flex-start;
+            row-gap: 15px;
+        }
+        &-logo {
+            gap: 12px;
+            font-size: 16px;
+            &__icon {
+                width: 30px;
+                height: 30px;
+                svg {
+                    width: 13px;
+                }
+            }
+        }
+        &-contact {
+            font-size: 12px;
+        }
+        &-links {
+            nav {
+                font-size: 12px;
+                gap: 16px;
+            }
+            &__column {
+                .footer-contact__title {
+                    margin-bottom: 8px;
+                }
+            }
+        }
+    }
+}

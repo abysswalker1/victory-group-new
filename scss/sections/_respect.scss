@@ -1,0 +1,75 @@
+.respect {
+    ul {
+        display: grid;
+        gap: 40px;
+        list-style-type: upper-roman;
+        grid-template-columns: repeat(3, 1fr);
+        grid-auto-rows: minmax(227px, auto);
+        li {
+            background-color: var(--bg);
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding: 20px;
+            position: relative;
+            h3 {
+                margin-bottom: 20px;
+            }
+            p {
+                font-size: 20px;
+            }
+        }
+    }
+    &-marker {
+        position: absolute;
+        color: var(--primary);
+        top: -13px;
+        right: -13px;
+        height: 56px;
+        width: 56px;
+        font-size: 28px;
+    }
+
+    @include lg {
+        ul {
+            grid-auto-rows: minmax(100px, auto);
+            gap: 20px;
+            li {
+                p {
+                    font-size: 14px;
+                }
+            }
+        }
+        &-marker {
+            top: -8px;
+            right: -8px;
+            height: 40px;
+            width: 40px;
+            font-size: 20px;
+        }
+    }
+
+    @include md {
+        ul {
+            grid-template-columns: 1fr 1fr;
+            grid-auto-rows: minmax(80px, auto);
+        }
+    }
+
+    @include sm {
+        ul {
+            grid-template-columns: 100%;
+            gap: 20px;
+            li {
+                padding: 15px;
+                padding-top: 25px;
+                text-align: center;
+            }
+        }
+        &-marker {
+            top: -20px;
+            right: calc(50% - 20px);
+        }
+    }
+}

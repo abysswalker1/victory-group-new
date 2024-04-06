@@ -1,0 +1,25 @@
+.questions {
+    .section-grid {
+        gap: 40px;
+    }
+    &-tabs {
+        &__text {
+            padding-bottom: 20px;
+        }
+    }
+
+    @include lg {
+        &-image {
+            max-width: 360px;
+        }
+        .section-grid {
+            gap: 20px;
+        }
+    }
+
+    @include md {
+        &-image {
+            display: none;
+        }
+    }
+}
