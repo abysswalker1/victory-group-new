@@ -10,14 +10,9 @@
             justify-content: space-between;
             background-size: cover;
             background: no-repeat center center;
+            flex: 1;
             h3 {
                 color: #fff;
-            }
-            flex: 1;
-            &-buttons {
-                display: flex;
-                flex-direction: column;
-                gap: 7px;
             }
             .btn {
                 gap: 12px;
@@ -56,13 +51,6 @@
             &__item {
                 padding: 15px;
                 height: 230px;
-                &-buttons {
-                    flex-direction: row;
-                }
-                .btn {
-                    width: auto;
-                    flex: 1;
-                }
             }
         }
     }
@@ -81,35 +69,24 @@
 
     @include sm {
         &-examples {
+            margin-bottom: 20px;
             &__item {
-                flex-direction: row;
-                align-items: center;
-                background-image: none !important;
-                width: 100%;
-                height: auto;
-                border-bottom: 1px solid #000;
-                padding: 10px 5px;
+                padding: 10px;
+                height: 140px;
                 h3 {
-                    color: inherit;
+                    font-size: 12px;
                 }
                 .btn {
-                    width: 30px;
                     height: 30px;
-                    &.playing {
-                        border-color: #000;
+                    gap: 5px;
+                    svg {
+                        height: 10px;
                     }
                 }
             }
-            &-icon {
-                &__playing {
-                    path {
-                        stroke: #000;
-                    }
-                }
+            .audio-example-text {
+                font-size: 10px;
             }
-        }
-        .audio-example-text {
-            display: none;
         }
     }
 }

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -18,7 +18,7 @@
                         <img class="header-logo__icon" src="/images/header-logo.svg" alt="">
                         start call
                     </a>
-                    <nav>
+                    <nav class="header-navigation">
                         <a href="#scripts">Сценарии</a>
                         <a href="#talk">Примеры разговоров</a>
                         <a href="#discussion">Тарифы</a>
@@ -30,6 +30,9 @@
                         </svg>
                         <span>+7 909 011-36-36</span>
                     </div>
+                    <button class="header-menu" data-modal-id="mobile-menu" type="button">
+                        <img src="/images/burger-menu.svg" alt="">
+                    </button>
                 </div>
             </header>
             <div class="container hero-content">
@@ -41,81 +44,81 @@
                 </div>
             </div>
         </div>
-        <section class="scripts" id="scripts">
-            <div class="container">
-                <h2>Работаем по разным сценариями</h2>
-                <div class="section-grid">
-                    <img class="scripts-image" src="./images/scripts-image.png" alt="">
-                    <div class="scripts-right">
-                        <div class="scripts-tabs expanding-tabs-list">
-                            <div class="scripts-tabs__item expanding-tab">
-                                <div class="expanding-tab__head">
-                                    <span class="expanding-tab__head-marker">I.</span>
-                                    <div class="expanding-tab__head-title">
-                                        <h3>Информирование</h3>
+        <main>
+            <section class="scripts" id="scripts">
+                <div class="container">
+                    <h2>Работаем по разным сценариями</h2>
+                    <div class="section-grid">
+                        <img class="scripts-image" src="./images/scripts-image.png" alt="">
+                        <div class="scripts-right">
+                            <div class="scripts-tabs expanding-tabs-list">
+                                <div class="scripts-tabs__item expanding-tab">
+                                    <div class="expanding-tab__head">
+                                        <span class="expanding-tab__head-marker">I.</span>
+                                        <div class="expanding-tab__head-title">
+                                            <h3>Информирование</h3>
+                                        </div>
+                                        <div class="expanding-tab__head-icon circle">
+                                            <img src="./images/crescent.svg" alt="">
+                                        </div>
                                     </div>
-                                    <div class="expanding-tab__head-icon circle">
-                                        <img src="./images/crescent.svg" alt="">
+                                    <div class="expanding-tab__content">
+                                        <ul>
+                                            <li>об акции;</li>
+                                            <li>о задолженности;</li>
+                                            <li>о каких-либо изменениях в компании.</li>
+                                        </ul>
                                     </div>
                                 </div>
-                                <div class="expanding-tab__content">
-                                    <ul>
-                                        <li>об акции;</li>
-                                        <li>о задолженности;</li>
-                                        <li>о каких-либо изменениях в компании.</li>
-                                    </ul>
+                                <div class="scripts-tabs__item expanding-tab">
+                                    <div class="expanding-tab__head">
+                                        <span class="expanding-tab__head-marker">II.</span>
+                                        <div class="expanding-tab__head-title">
+                                            <h3>Анкетирование</h3>
+                                        </div>
+                                        <div class="expanding-tab__head-icon circle">
+                                            <img src="./images/crescent.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="expanding-tab__content">
+                                        <ul>
+                                            <li>оценка качества работы (проделанной работы/услуги);</li>
+                                            <li>социальный опрос;</li>
+                                            <li>выявление заинтересованности.</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="scripts-tabs__item expanding-tab">
+                                    <div class="expanding-tab__head">
+                                        <span class="expanding-tab__head-marker">III.</span>
+                                        <div class="expanding-tab__head-title">
+                                            <h3>Актуализация заявки</h3>
+                                        </div>
+                                        <div class="expanding-tab__head-icon circle">
+                                            <img src="./images/crescent.svg" alt="">
+                                        </div>
+                                    </div>
+                                    <div class="expanding-tab__content">
+                                        <ul>
+                                            <li>подтверждение записи;</li>
+                                            <li>возврат клиента;</li>
+                                            <li>выявление заинтересованности.</li>
+                                        </ul>
+                                    </div>
                                 </div>
                             </div>
-                            <div class="scripts-tabs__item expanding-tab">
-                                <div class="expanding-tab__head">
-                                    <span class="expanding-tab__head-marker">II.</span>
-                                    <div class="expanding-tab__head-title">
-                                        <h3>Анкетирование</h3>
-                                    </div>
-                                    <div class="expanding-tab__head-icon circle">
-                                        <img src="./images/crescent.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="expanding-tab__content">
-                                    <ul>
-                                        <li>оценка качества работы (проделанной работы/услуги);</li>
-                                        <li>социальный опрос;</li>
-                                        <li>выявление заинтересованности.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="scripts-tabs__item expanding-tab">
-                                <div class="expanding-tab__head">
-                                    <span class="expanding-tab__head-marker">III.</span>
-                                    <div class="expanding-tab__head-title">
-                                        <h3>Актуализация заявки</h3>
-                                    </div>
-                                    <div class="expanding-tab__head-icon circle">
-                                        <img src="./images/crescent.svg" alt="">
-                                    </div>
-                                </div>
-                                <div class="expanding-tab__content">
-                                    <ul>
-                                        <li>подтверждение записи;</li>
-                                        <li>возврат клиента;</li>
-                                        <li>выявление заинтересованности.</li>
-                                    </ul>
-                                </div>
-                            </div>
+                            <button class="scripts-button btn" data-modal-id="scripts-modal" type="button">Составить индивидуальный скрипт</button>
                         </div>
-                        <button class="scripts-button btn" data-modal-id="scripts-modal" type="button">Составить индивидуальный скрипт</button>
                     </div>
+                
                 </div>
-            
-            </div>
-        </section>
-        <section class="talk" id="talk">
-            <div class="container">
-                <h2>примеры разговоров из разных сфер</h2>
-                <div class="talk-examples center">
-                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-1.png)">
-                        <h3>Автосалон</h3>
-                        <div class="talk-examples__item-buttons">
+            </section>
+            <section class="talk" id="talk">
+                <div class="container">
+                    <h2>примеры разговоров из разных сфер</h2>
+                    <div class="talk-examples center">
+                        <div class="talk-examples__item" style="background-image: url(/images/talk-example-1.png)">
+                            <h3>Автосалон</h3>
                             <button data-audio="/audio/example.mp3"  class="talk-audio btn center" type="button">
                                 <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                     <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
@@ -126,10 +129,32 @@
                                 <span class="audio-example-text"></span>
                             </button>
                         </div>
-                    </div>
-                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-2.png)">
-                        <h3>Кредитование</h3>
-                        <div class="talk-examples__item-buttons">
+                        <div class="talk-examples__item" style="background-image: url(/images/talk-example-2.png)">
+                            <h3>Кредитование</h3>
+                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                        <div class="talk-examples__item" style="background-image: url(/images/talk-example-3.png)">
+                            <h3>Салон красоты</h3>
+                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
+                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
+                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
+                                </svg>
+                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
+                                </svg>
+                                <span class="audio-example-text"></span>
+                            </button>
+                        </div>
+                        <div class="talk-examples__item" style="background-image: url(/images/talk-example-4.png)">
+                            <h3>Недвижимость</h3>
                             <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
                                 <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
                                     <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
@@ -141,328 +166,270 @@
                             </button>
                         </div>
                     </div>
-                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-3.png)">
-                        <h3>Салон красоты</h3>
-                        <div class="talk-examples__item-buttons">
-                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
-                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
-                                </svg>
-                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
-                                </svg>
-                                <span class="audio-example-text"></span>
-                            </button>
-                        </div>
-                    </div>
-                    <div class="talk-examples__item" style="background-image: url(/images/talk-example-4.png)">
-                        <h3>Недвижимость</h3>
-                        <div class="talk-examples__item-buttons">
-                            <button data-audio="/audio/example.mp3" class="talk-audio btn center" type="button">
-                                <svg class="talk-examples-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="13" viewBox="0 0 12 13" fill="none">
-                                    <path d="M12 6.5L0 12.5L6.05683e-07 0.5L12 6.5Z" fill="white"/>
-                                </svg>
-                                <svg class="talk-examples-icon__playing" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M1 13V0M7 13V0" stroke-width="2"/>
-                                </svg>
-                                <span class="audio-example-text"></span>
-                            </button>
-                        </div>
+                    <div class="center">
+                        <button class="btn" data-modal-id="talk-modal" type="button">Запросить завонки в вашей сфере</button>
                     </div>
                 </div>
-                <div class="center">
-                    <button class="btn" data-modal-id="talk-modal" type="button">Запросить завонки в вашей сфере</button>
+            </section>
+            <section class="discussion" id="discussion">
+                <div class="container">
+                    <h2>формат и стоимость работ</h2>
+                    <div class="discussion-rules">
+                        <div class="discussion-rules__item">
+                            <div class="discussion-rules__item-count">
+                                <p class="primary">до 5 000 </p>
+                                <p>номеров</p>
+                            </div>
+                            <div class="discussion-rules__item-price">
+                                <p class="primary">35 ₽</p>
+                                <p>/один номер</p>
+                            </div>
+                        </div>
+                        <div class="discussion-rules__item">
+                            <div class="discussion-rules__item-count">
+                                <p class="primary">5 000 — 10 000</p>
+                                <p>номеров</p>
+                            </div>
+                            <div class="discussion-rules__item-price">
+                                <p class="primary">30 ₽</p>
+                                <p>/один номер</p>
+                            </div>
+                        </div>
+                        <div class="discussion-rules__item">
+                            <div class="discussion-rules__item-count">
+                                <p class="primary">10 000 — 15 000 </p>
+                                <p>номеров</p>
+                            </div>
+                            <div class="discussion-rules__item-price">
+                                <p class="primary">25 ₽</p>
+                                <p>/один номер</p>
+                            </div>
+                        </div>
+                        <div class="discussion-rules__item">
+                            <div class="discussion-rules__item-count">
+                                <p class="primary">15 000 — 30 000</p>
+                                <p>номеров</p>
+                            </div>
+                            <div class="discussion-rules__item-price">
+                                <p class="primary">20 ₽</p>
+                                <p>/один номер</p>
+                            </div>
+                        </div>
+                        <div class="discussion-rules__item wide">
+                            <div class="discussion-rules__item-count">
+                                <p class="primary">Более 30 000</p>
+                                <p>номеров</p>
+                            </div>
+                            <div class="discussion-rules__item-price">
+                                <p class="primary">обсуждается лично</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="discussion-form">
+                        <p class="discussion-form__title">Обсудим детали <br>вашего проекта</p>
+                        <form>
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="/images/russia.png" alt="">
+                                <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                            </div>
+                            <button class="submit center" type="submit">Отправить заявку</button>
+                        </form>
+                    </div>
                 </div>
-            </div>
-        </section>
-        <section class="discussion" id="discussion">
-            <div class="container">
-                <h2>формат и стоимость работ</h2>
-                <div class="discussion-rules">
-                    <div class="discussion-rules__item">
-                        <div class="discussion-rules__item-count">
-                            <p class="primary">до 5 000 </p>
-                            <p>номеров</p>
+            </section>
+            <section class="work">
+                <div class="container">
+                    <h2>что входит в нашу работу</h2>
+                    <ul>
+                        <li>Работа в CRM заказчика, контроль качества</li>
+                        <li>Оплата телефонии</li>
+                        <li>Формирование отчета с рекомендациями</li>
+                        <li>Подготовки и ведения проекта</li>
+                        <li>Предоставление записей разговоров</li>
+                        <li>Администрирование проекта </li>
+                        <li>Обучение операторов продукту заказчика</li>
+                        <li>Первичная подготовка сценария</li>
+                        <li>Подготовки проекта до 1 рабочего дня</li>
+                        <li>Внесение корректировок в скрипт</li>
+                    </ul>
+                </div>
+            </section>
+            <section class="stages">
+                <div class="container">
+                    <h2>этапы работы</h2>
+                    <div class="section-grid">
+                        <div class="stages-tabs expanding-tabs-list">
+                            <div class="stages-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>I. Этап <span class="expanding-tab__head-subtitle">Подготовка проекта</span></h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <p>На основе портрета вашего клиента, создаем и согласовываем сценарий разговора между оператором и клиентом, после настраиваем интеграции с вашей CRM, гугл таблицей или почтой.</p>
+                                </div>
+                            </div>
+                            <div class="stages-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>II. Этап <span class="expanding-tab__head-subtitle">Работа операторов</span></h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <p>Прозвоним любой объем базы за 2-3 дня, по вашим критериям отсеим холодных клиентов и передадим  только максимально заинтересованных в режиме онлайн</p>
+                                </div>
+                            </div>
+                            <div class="stages-tabs__item expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>III. Этап <span class="expanding-tab__head-subtitle">Сопровождение проекта</span></h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
+                                </div>
+                                <div class="expanding-tab__content">
+                                    <p>Предлагаем техническое сопровождение, контроль качества и запись всех телефонных разговоров. Отчеты предоставляются по запросу. Также есть возможность прослушать записи диалогов.</p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="discussion-rules__item-price">
-                            <p class="primary">35 ₽</p>
-                            <p>/один номер</p>
-                        </div>
-                    </div>
-                    <div class="discussion-rules__item">
-                        <div class="discussion-rules__item-count">
-                            <p class="primary">5 000 — 10 000</p>
-                            <p>номеров</p>
-                        </div>
-                        <div class="discussion-rules__item-price">
-                            <p class="primary">30 ₽</p>
-                            <p>/один номер</p>
-                        </div>
-                    </div>
-                    <div class="discussion-rules__item">
-                        <div class="discussion-rules__item-count">
-                            <p class="primary">10 000 — 15 000 </p>
-                            <p>номеров</p>
-                        </div>
-                        <div class="discussion-rules__item-price">
-                            <p class="primary">25 ₽</p>
-                            <p>/один номер</p>
-                        </div>
-                    </div>
-                    <div class="discussion-rules__item">
-                        <div class="discussion-rules__item-count">
-                            <p class="primary">15 000 — 30 000</p>
-                            <p>номеров</p>
-                        </div>
-                        <div class="discussion-rules__item-price">
-                            <p class="primary">20 ₽</p>
-                            <p>/один номер</p>
-                        </div>
-                    </div>
-                    <div class="discussion-rules__item wide">
-                        <div class="discussion-rules__item-count">
-                            <p class="primary">Более 30 000</p>
-                            <p>номеров</p>
-                        </div>
-                        <div class="discussion-rules__item-price">
-                            <p class="primary">обсуждается лично</p>
-                        </div>
+                        <img class="stages-image" src="/images/stages-image.png" alt="">
                     </div>
                 </div>
-                <div class="discussion-form">
-                    <p class="discussion-form__title">Обсудим детали <br>вашего проекта</p>
-                    <form>
-                        <div class="input-wrap">
-                            <input type="text" placeholder="Ваше имя">
-                        </div>
-                        <div class="input-wrap">
-                            <img src="/images/russia.png" alt="">
-                            <input type="phone" placeholder="+ 7 (922) 177 03-97">
-                        </div>
-                        <button class="submit center" type="submit">Отправить заявку</button>
-                    </form>
+            </section>
+            <section class="respect" id="respect">
+                <div class="container">
+                    <h2>почему нам дверют</h2>
+                    <ul>
+                        <li>
+                            <div class="respect-marker center circle">I</div>
+                            <h3>Бесплатная оценка</h3>
+                            <p>Мы предлагаем бесплатную оценку вашего проекта с учетом нашего многолетнего опыта.</p>
+                        </li>
+                        <li>
+                            <div class="respect-marker center circle">II</div>
+                            <h3>Услуги Call-центра</h3>
+                            <p>Мы предлагаем услуги колл-центра. Наши услуги включают проведение звонков, а также анализ и предоставление отчетов о результатах.</p>
+                        </li>
+                        <li>
+                            <div class="respect-marker center circle">III</div>
+                            <h3>Кратчайшие сроки</h3>
+                            <p>Мы гарантируем, что запустим ваш проект бесплатно в кратчайшие сроки - за 1-2 дня.</p>
+                        </li>
+                        <li>
+                            <div class="respect-marker center circle">IV</div>
+                            <h3>Система отчетности</h3>
+                            <p>Мы предоставляем прозрачную систему отчетности. Каждый звонок можно прослушать, и все результаты передаются для дальнейшего анализа.</p>
+                        </li>
+                        <li>
+                            <div class="respect-marker center circle">V</div>
+                            <h3>Масштабирование</h3>
+                            <p>Мы готовы обсудить с вами дальнейшие шаги по расширению и улучшению эффективности звонков.</p>
+                        </li>
+                        <li>
+                            <div class="respect-marker center circle">VI</div>
+                            <h3>Менеджер</h3>
+                            <p>Ваш персональный менеджер будет оперативно информировать вас о ходе выполнения звонков и отвечать на все возникающие вопросы.</p>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-        <section class="work">
-            <div class="container">
-                <h2>что входит в нашу работу</h2>
-                <ul>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Работа в CRM заказчика, контроль качества</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Оплата телефонии</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Формирование отчета с рекомендациями</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Подготовки и ведения проекта</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Предоставление записей разговоров</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Администрирование проекта </p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Обучение операторов продукту заказчика</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Первичная подготовка сценария</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Подготовки проекта до 1 рабочего дня</p>
-                    </li>
-                    <li>
-                        <img src="/images/list-arrow.svg" alt="">
-                        <p>Внесение корректировок в скрипт</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="stages">
-            <div class="container">
-                <h2>этапы работы</h2>
-                <div class="section-grid">
-                    <div class="stages-tabs expanding-tabs-list">
-                        <div class="stages-tabs__item expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>I. Этап <span class="expanding-tab__head-subtitle">Подготовка проекта</span></h3>
+            </section>
+            <section class="questions">
+                <div class="container">
+                    <h2>Вопрос-ответ</h2>
+                    <div class="section-grid">
+                        <img class="questions-image" src="/images/questions-image.png" alt="">
+                        <div class="questions-tabs expanding-tabs-list">
+                            <div class="expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Какое качество заявок я получу?</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
+                                <div class="expanding-tab__content">
+                                    <p class="questions-tabs__text">Перед тем, как начать прозвон мы обсудим это с вами: договоримся о качестве лида, который вас устроит. Обычно это ЛПР с именем (мы его знаем), готовый обсудить ваше предложение детально по телефону с вашим экспертом или на встрече.</p>
                                 </div>
                             </div>
-                            <div class="expanding-tab__content">
-                                <p>На основе портрета вашего клиента, создаем и согласовываем сценарий разговора между оператором и клиентом, после настраиваем интеграции с вашей CRM, гугл таблицей или почтой.</p>
-                            </div>
-                        </div>
-                        <div class="stages-tabs__item expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>II. Этап <span class="expanding-tab__head-subtitle">Работа операторов</span></h3>
+                            <div class="expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Как попробовать?</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="expanding-tab__content">
-                                <p>Прозвоним любой объем базы за 2-3 дня, по вашим критериям отсеим холодных клиентов и передадим  только максимально заинтересованных в режиме онлайн</p>
-                            </div>
-                        </div>
-                        <div class="stages-tabs__item expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>III. Этап <span class="expanding-tab__head-subtitle">Сопровождение проекта</span></h3>
-                                </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
+                                <div class="expanding-tab__content">
+                                    <p class="questions-tabs__text">Оставьте заявку в форме ниже и мы свяжемся с вами, чтобы рассказать, с чего мы можем начать и предложить вам тестовый период</p>
                                 </div>
                             </div>
-                            <div class="expanding-tab__content">
-                                <p>Предлагаем техническое сопровождение, контроль качества и запись всех телефонных разговоров. Отчеты предоставляются по запросу. Также есть возможность прослушать записи диалогов.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <img class="stages-image" src="/images/stages-image.png" alt="">
-                </div>
-            </div>
-        </section>
-        <section class="respect" id="respect">
-            <div class="container">
-                <h2>почему нам дверют</h2>
-                <ul>
-                    <li>
-                        <div class="respect-marker center circle">I</div>
-                        <h3>Бесплатная оценка</h3>
-                        <p>Мы предлагаем бесплатную оценку вашего проекта с учетом нашего многолетнего опыта.</p>
-                    </li>
-                    <li>
-                        <div class="respect-marker center circle">II</div>
-                        <h3>Услуги Call-центра</h3>
-                        <p>Мы предлагаем услуги колл-центра. Наши услуги включают проведение звонков, а также анализ и предоставление отчетов о результатах.</p>
-                    </li>
-                    <li>
-                        <div class="respect-marker center circle">III</div>
-                        <h3>Кратчайшие сроки</h3>
-                        <p>Мы гарантируем, что запустим ваш проект бесплатно в кратчайшие сроки - за 1-2 дня.</p>
-                    </li>
-                    <li>
-                        <div class="respect-marker center circle">IV</div>
-                        <h3>Система отчетности</h3>
-                        <p>Мы предоставляем прозрачную систему отчетности. Каждый звонок можно прослушать, и все результаты передаются для дальнейшего анализа.</p>
-                    </li>
-                    <li>
-                        <div class="respect-marker center circle">V</div>
-                        <h3>Масштабирование</h3>
-                        <p>Мы готовы обсудить с вами дальнейшие шаги по расширению и улучшению эффективности звонков.</p>
-                    </li>
-                    <li>
-                        <div class="respect-marker center circle">VI</div>
-                        <h3>Менеджер</h3>
-                        <p>Ваш персональный менеджер будет оперативно информировать вас о ходе выполнения звонков и отвечать на все возникающие вопросы.</p>
-                    </li>
-                </ul>
-            </div>
-        </section>
-        <section class="questions">
-            <div class="container">
-                <h2>Вопрос-ответ</h2>
-                <div class="section-grid">
-                    <img class="questions-image" src="/images/questions-image.png" alt="">
-                    <div class="questions-tabs expanding-tabs-list">
-                        <div class="expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>Какое качество заявок я получу?</h3>
+                            <div class="expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>С какими проектами вы работаете?</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
+                                <div class="expanding-tab__content">
+                                    <p>Мы будем вам полезны, если:</p>
+                                    <ul class="questions-tabs__text">
+                                        <li>вам нужно работать с большим объемом звонков — от 400 вызовов в день;</li>
+                                        <li>нужно отвечать на однотипные вопросы;</li>
+                                        <li>клиентам требуется поддержка;</li>
+                                        <li>продаете по телефону</li>
+                                    </ul>
                                 </div>
                             </div>
-                            <div class="expanding-tab__content">
-                                <p class="questions-tabs__text">Перед тем, как начать прозвон мы обсудим это с вами: договоримся о качестве лида, который вас устроит. Обычно это ЛПР с именем (мы его знаем), готовый обсудить ваше предложение детально по телефону с вашим экспертом или на встрече.</p>
-                            </div>
-                        </div>
-                        <div class="expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>Как попробовать?</h3>
+                            <div class="expanding-tab">
+                                <div class="expanding-tab__head">
+                                    <div class="expanding-tab__head-title">
+                                        <h3>Как выглядит отчетность?</h3>
+                                    </div>
+                                    <div class="expanding-tab__head-icon circle">
+                                        <img src="./images/crescent.svg" alt="">
+                                    </div>
                                 </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
+                                <div class="expanding-tab__content">
+                                    <p class="questions-tabs__text">Мы составляем для вас отчеты с необходимой периодичностью в котором будут отражены количество и тематика обращений, данные клиента, результат диалога и другая необходимая информация по итогам анкетирования, которая в будущем поможет вам скорректировать ход рекламной кампании и направление развития.</p>
                                 </div>
-                            </div>
-                            <div class="expanding-tab__content">
-                                <p class="questions-tabs__text">Оставьте заявку в форме ниже и мы свяжемся с вами, чтобы рассказать, с чего мы можем начать и предложить вам тестовый период</p>
-                            </div>
-                        </div>
-                        <div class="expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>С какими проектами вы работаете?</h3>
-                                </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="expanding-tab__content">
-                                <p>Мы будем вам полезны, если:</p>
-                                <ul class="questions-tabs__text">
-                                    <li>вам нужно работать с большим объемом звонков — от 400 вызовов в день;</li>
-                                    <li>нужно отвечать на однотипные вопросы;</li>
-                                    <li>клиентам требуется поддержка;</li>
-                                    <li>продаете по телефону</li>
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="expanding-tab">
-                            <div class="expanding-tab__head">
-                                <div class="expanding-tab__head-title">
-                                    <h3>Как выглядит отчетность?</h3>
-                                </div>
-                                <div class="expanding-tab__head-icon circle">
-                                    <img src="./images/crescent.svg" alt="">
-                                </div>
-                            </div>
-                            <div class="expanding-tab__content">
-                                <p class="questions-tabs__text">Мы составляем для вас отчеты с необходимой периодичностью в котором будут отражены количество и тематика обращений, данные клиента, результат диалога и другая необходимая информация по итогам анкетирования, которая в будущем поможет вам скорректировать ход рекламной кампании и направление развития.</p>
                             </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        </section>
-        <section class="rate">
-            <div class="container section-grid">
-                <div class="rate-form">
-                    <h2>Подберем для вас оптимальный тариф</h2>
-                    <form>
-                        <div class="input-wrap">
-                            <input type="text" placeholder="Ваше имя">
-                        </div>
-                        <div class="input-wrap">
-                            <img src="/images/russia.png" alt="">
-                            <input type="phone" placeholder="+ 7 (922) 177 03-97">
-                        </div>
-                        <button class="submit center" type="submit">Заказать услугу</button>
-                    </form>
+            </section>
+            <section class="rate">
+                <div class="container section-grid">
+                    <div class="rate-form">
+                        <h2>Подберем для вас оптимальный тариф</h2>
+                        <form>
+                            <div class="input-wrap">
+                                <input type="text" placeholder="Ваше имя">
+                            </div>
+                            <div class="input-wrap">
+                                <img src="/images/russia.png" alt="">
+                                <input type="phone" placeholder="+ 7 (922) 177 03-97">
+                            </div>
+                            <button class="submit center" type="submit">Заказать услугу</button>
+                        </form>
+                    </div>
+                    <img class="rate-image" src="/images/rate-image.png" alt="">
                 </div>
-                <img class="rate-image" src="/images/rate-image.png" alt="">
-            </div>
-        </section>
+            </section>
+        </main>
         <footer class="footer">
             <div class="container section-grid">
                 <div class="footer-main">
@@ -496,6 +463,22 @@
             </div>
         </footer>
         <div class="wrap-modals-all">
+            <div class="modal-wrap mobile-menu" id="mobile-menu">
+                <div class="mobile-menu__content modal">
+                    <nav class="mobile-menu__navigation">
+                        <a class="modal-link" href="#scripts">Сценарии</a>
+                        <a class="modal-link" href="#talk">Примеры разговоров</a>
+                        <a class="modal-link" href="#discussion">Тарифы</a>
+                        <a class="modal-link" href="#respect">Почему мы</a>
+                    </nav>
+                    <a href="tel:+79090113636" class="mobile-menu__phone">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none">
+                            <path d="M6.62 10.79C8.06 13.62 10.38 15.94 13.21 17.38L15.41 15.18C15.69 14.9 16.08 14.82 16.43 14.93C17.55 15.3 18.75 15.5 20 15.5C20.2652 15.5 20.5196 15.6054 20.7071 15.7929C20.8946 15.9804 21 16.2348 21 16.5V20C21 20.2652 20.8946 20.5196 20.7071 20.7071C20.5196 20.8946 20.2652 21 20 21C15.4913 21 11.1673 19.2089 7.97918 16.0208C4.79107 12.8327 3 8.50868 3 4C3 3.73478 3.10536 3.48043 3.29289 3.29289C3.48043 3.10536 3.73478 3 4 3H7.5C7.76522 3 8.01957 3.10536 8.20711 3.29289C8.39464 3.48043 8.5 3.73478 8.5 4C8.5 5.25 8.7 6.45 9.07 7.57C9.18 7.92 9.1 8.31 8.82 8.59L6.62 10.79Z" fill="#000"/>
+                        </svg>
+                        <span>+7 909 011-36-36</span>
+                    </a>
+                </div>
+            </div>
             <div class="modal-wrap" id="price-modal">
                 <div class="modal">
                     <img class="modal-image" src="/images/modal-image.png" alt="">

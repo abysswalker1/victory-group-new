@@ -12,22 +12,27 @@
             line-height: 29px;
             display: flex;
             align-items: flex-start;
-            img {
+            &:before {
+                content: '';
+                background: url(/images/list-arrow.svg)
+                 no-repeat center center;
+                background-size: contain;
                 width: 60px;
                 margin-right: 40px;
-                display: inline;
                 height: 29px;
+                flex-shrink: 0;
             }
         }
     }
 
     @include lg {
         ul {
+            row-gap: 10px;
             li {
                 font-size: 16px;
-                img {
+                &:before {
                     width: 28px;
-                    margin-right: 20px;
+                    margin-right: 15px;
                 }
             }
         }
@@ -40,7 +45,7 @@
             li {
                 font-size: 12px;
                 line-height: 100%;
-                img {
+                &:before{
                     height: 16px;
                 }
             }
@@ -51,7 +56,7 @@
         ul {
             li {
                 line-height: normal;
-                img {
+                &:before{
                     width: 20px;
                     margin-right: 8px;
                 }

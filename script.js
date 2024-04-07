@@ -24,7 +24,7 @@ class Modal {
     };
   
     _handleClick(e) {
-      if (e.target === this.window) {
+      if (e.target === this.window || e.target.matches('.modal-link')) {
         this.close();
       }
     }
@@ -66,7 +66,7 @@ class Modal {
 
     document.addEventListener('DOMContentLoaded', function () {
         // Первый модал
-        setTimeout(openFirstModal, 5000);
+        // setTimeout(openFirstModal, 5000);
 
         // Воспроизведение аудио
         let _settings = {

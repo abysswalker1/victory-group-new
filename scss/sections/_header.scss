@@ -27,7 +27,11 @@
         column-gap: 10px;
     }
 
-    nav a {
+    &-menu {
+        display: none;
+    }
+
+    &-navigation a {
         margin-right: 28px;
 
         &:last-child {
@@ -46,7 +50,7 @@
                 margin-right: 15px;
             }
         }
-        nav a {
+        &-navigation a {
             margin-right: 10px;  
             font-size: 14px;
         }
@@ -56,16 +60,20 @@
     }
 
     @include md {
+        &-navigation {
+            display: none;
+        }
+
         &-call {
-            span {
-                display: none;
-            }
+            display: none;
+        }
+
+        &-menu {
+            display: block;
         }
     }
 
     @include sm {
-        nav {
-            display: none;
-        }
+       
     }
 }
